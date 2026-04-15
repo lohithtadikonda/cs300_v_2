@@ -1,0 +1,132 @@
+import { Course, Registration } from '@/types';
+
+export const MOCK_COURSES: Course[] = [
+  { id: '1', code: 'CS301', name: 'Data Structures & Algorithms', credits: 4, department: 'CSE', semester: 3 },
+  { id: '2', code: 'CS302', name: 'Operating Systems', credits: 4, department: 'CSE', semester: 3 },
+  { id: '3', code: 'CS303', name: 'Database Management Systems', credits: 4, department: 'CSE', semester: 3 },
+  { id: '4', code: 'CS304', name: 'Computer Networks', credits: 3, department: 'CSE', semester: 3 },
+  { id: '5', code: 'MA301', name: 'Probability & Statistics', credits: 3, department: 'Mathematics', semester: 3 },
+  { id: '6', code: 'HS301', name: 'Technical Communication', credits: 2, department: 'HSS', semester: 3 },
+  { id: '7', code: 'CS401', name: 'Machine Learning', credits: 4, department: 'CSE', semester: 5 },
+  { id: '8', code: 'CS402', name: 'Compiler Design', credits: 3, department: 'CSE', semester: 5 },
+  { id: '9', code: 'EC301', name: 'Digital Signal Processing', credits: 3, department: 'ECE', semester: 5 },
+  { id: '10', code: 'CS501', name: 'Artificial Intelligence', credits: 4, department: 'CSE', semester: 7 },
+];
+
+export const MOCK_REGISTRATIONS: Registration[] = [
+  {
+    id: 'reg-1',
+    studentId: '1',
+    studentName: 'Arjun Kumar',
+    rollNo: '2021101',
+    department: 'CSE',
+    category: 2,
+    formA: {
+      courses: [MOCK_COURSES[0], MOCK_COURSES[1], MOCK_COURSES[2], MOCK_COURSES[4]],
+      totalCredits: 15,
+      semester: 5,
+      academicYear: '2024-25',
+    },
+    formB: {
+      paymentCategory: 'scholarship',
+      tuitionFee: 50000,
+      hostelFee: 15000,
+      otherFees: 5000,
+      totalFee: 70000,
+      paymentDetails: 'Merit Scholarship - MHRD',
+    },
+    currentStage: 'section_review',
+    remarks: [],
+    approvals: [
+      { stage: 'draft', approvedBy: 'System', approvedAt: '2024-12-01T10:00:00Z', status: 'approved' },
+    ],
+    createdAt: '2024-12-01T10:00:00Z',
+    updatedAt: '2024-12-01T10:00:00Z',
+  },
+  {
+    id: 'reg-2',
+    studentId: '2x',
+    studentName: 'Priya Singh',
+    rollNo: '2021102',
+    department: 'CSE',
+    category: 1,
+    formA: {
+      courses: [MOCK_COURSES[0], MOCK_COURSES[1], MOCK_COURSES[3]],
+      totalCredits: 11,
+      semester: 5,
+      academicYear: '2024-25',
+    },
+    currentStage: 'advisor_review',
+    remarks: [],
+    approvals: [
+      { stage: 'draft', approvedBy: 'System', approvedAt: '2024-12-01T09:00:00Z', status: 'approved' },
+      { stage: 'section_review', approvedBy: 'Dr. Meena Gupta', approvedAt: '2024-12-02T11:00:00Z', status: 'approved', remarks: 'All good' },
+    ],
+    createdAt: '2024-12-01T09:00:00Z',
+    updatedAt: '2024-12-02T11:00:00Z',
+  },
+  {
+    id: 'reg-3',
+    studentId: '3x',
+    studentName: 'Rahul Mehta',
+    rollNo: '2021103',
+    department: 'ECE',
+    category: 2,
+    formA: {
+      courses: [MOCK_COURSES[8], MOCK_COURSES[4]],
+      totalCredits: 6,
+      semester: 5,
+      academicYear: '2024-25',
+    },
+    formB: {
+      paymentCategory: 'self_financed',
+      tuitionFee: 100000,
+      hostelFee: 20000,
+      otherFees: 10000,
+      totalFee: 130000,
+      paymentDetails: 'Bank Transfer - SBI',
+    },
+    currentStage: 'section_review',
+    remarks: [],
+    approvals: [
+      { stage: 'draft', approvedBy: 'System', approvedAt: '2024-12-01T08:00:00Z', status: 'approved' },
+    ],
+    createdAt: '2024-12-01T08:00:00Z',
+    updatedAt: '2024-12-01T08:00:00Z',
+  },
+  {
+    id: 'reg-4',
+    studentId: '4x',
+    studentName: 'Sneha Patel',
+    rollNo: '2021104',
+    department: 'CSE',
+    category: 3,
+    formA: {
+      courses: [MOCK_COURSES[6], MOCK_COURSES[7]],
+      totalCredits: 7,
+      semester: 5,
+      academicYear: '2024-25',
+    },
+    formB: {
+      paymentCategory: 'loan',
+      tuitionFee: 50000,
+      hostelFee: 15000,
+      otherFees: 5000,
+      totalFee: 72000,
+      lateFine: 2000,
+      paymentDetails: 'Education Loan - PNB',
+    },
+    currentStage: 'submitted',
+    remarks: ['Late registration - fine applied'],
+    approvals: [
+      { stage: 'draft', approvedBy: 'System', approvedAt: '2024-12-03T10:00:00Z', status: 'approved' },
+      { stage: 'section_review', approvedBy: 'Prof. Suresh Iyer', approvedAt: '2024-12-04T11:00:00Z', status: 'approved' },
+      { stage: 'advisor_review', approvedBy: 'Dr. Academic Advisor', approvedAt: '2024-12-05T14:00:00Z', status: 'approved' },
+    ],
+    createdAt: '2024-12-03T10:00:00Z',
+    updatedAt: '2024-12-05T14:00:00Z',
+  },
+];
+
+export let registrationEnabled = true;
+export function setRegistrationEnabled(val: boolean) { registrationEnabled = val; }

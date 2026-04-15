@@ -1,0 +1,17 @@
+                  id                  |         name         |           email            |       role       |  roll_no  | department |            created_at            |            updated_at            | password_hash 
+--------------------------------------+----------------------+----------------------------+------------------+-----------+------------+----------------------------------+----------------------------------+---------------
+ ded197ac-f36c-4c29-8d24-581892313087 | Arjun Kumar          | student@iiitg.ac.in        | student          | 2021101   | CSE        | 2026-04-12 16:09:53.230826+05:30 | 2026-04-12 16:09:53.230826+05:30 | 
+ 6f3198d6-5c5c-40bc-a134-10f8d02b5b71 | Dr. Priya Sharma     | warden@iiitg.ac.in         | warden           |           |            | 2026-04-12 16:09:53.230826+05:30 | 2026-04-12 16:09:53.230826+05:30 | 
+ 4578cd30-a594-4dc2-aab1-409a5045e6a0 | Rajesh Verma         | finance@iiitg.ac.in        | finance          |           |            | 2026-04-12 16:09:53.230826+05:30 | 2026-04-12 16:09:53.230826+05:30 | 
+ 5045e3e2-86b3-490d-93ff-8b8b76e188c7 | Dr. Meena Gupta      | studentaffairs@iiitg.ac.in | student_affairs  |           |            | 2026-04-12 16:09:53.230826+05:30 | 2026-04-12 16:09:53.230826+05:30 | 
+ 9eac513e-7de4-4f2d-b2fc-ef9c9c04516c | Prof. Suresh Iyer    | academic@iiitg.ac.in       | academic_affairs |           |            | 2026-04-12 16:09:53.230826+05:30 | 2026-04-12 16:09:53.230826+05:30 | 
+ 90a97295-a0ca-4124-a757-62d04e83c8fc | System Admin         | admin@iiitg.ac.in          | admin            |           |            | 2026-04-12 16:09:53.230826+05:30 | 2026-04-12 16:09:53.230826+05:30 | 
+ bba022d7-f522-4ad4-8061-ecd41b4e13a1 | Real Student         | real_student@iiitg.ac.in   | student          |           |            | 2026-04-12 16:45:44.096202+05:30 | 2026-04-12 16:45:44.096202+05:30 | 123456
+ 041a24db-b7b5-4699-928e-c723214a7323 | Test Student         | test_student@iiitg.ac.in   | student          | 220101001 | CSE        | 2026-04-12 16:53:43.085993+05:30 | 2026-04-12 16:53:43.085993+05:30 | 123456
+ ba871d9d-2321-494e-b8d3-bd64ea025536 | Test Warden          | test_warden@iiitg.ac.in    | warden           |           |            | 2026-04-12 16:53:43.085993+05:30 | 2026-04-12 16:53:43.085993+05:30 | 123456
+ 0ab50052-1058-41db-8596-3f21c407c618 | Test Finance         | test_finance@iiitg.ac.in   | finance          |           |            | 2026-04-12 16:53:43.085993+05:30 | 2026-04-12 16:53:43.085993+05:30 | 123456
+ fe1a615a-cf1a-4640-82d3-f3f2a5859942 | Test Student Affairs | test_sa@iiitg.ac.in        | student_affairs  |           |            | 2026-04-12 16:53:43.085993+05:30 | 2026-04-12 16:53:43.085993+05:30 | 123456
+ baf9425e-7995-4665-864a-b799b28ddf87 | Test Academic        | test_acad@iiitg.ac.in      | academic_affairs |           |            | 2026-04-12 16:53:43.085993+05:30 | 2026-04-12 16:53:43.085993+05:30 | 123456
+ 2f200307-eb56-4e77-b399-bd5b8c7df340 | Test Admin           | test_admin@iiitg.ac.in     | admin            |           |            | 2026-04-12 16:53:43.085993+05:30 | 2026-04-12 16:53:43.085993+05:30 | 123456
+(13 rows)
+
